@@ -1,0 +1,55 @@
+/* Custom Styles for Neon Effects and Animations */
+
+/* Text Glow Utility */
+.glow-text {
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5), 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+/* Button Glow on Hover */
+.btn-glow:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+}
+
+/* Custom Scrollbar for a modern look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b; 
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00FF88; 
+}
+
+/* Timeline Vertical Line positioning */
+.right-timeline::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: rgba(0, 255, 136, 0.2);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+/* Skill Progress Bar Animation on Load */
+@keyframes fillProgress {
+    from { width: 0; }
+}
+
+.skill-progress {
+    animation: fillProgress 1.5s ease-out forwards;
+}
+
+/* Smooth reveal for sections */
+html {
+    scroll-behavior: smooth;
+}
